@@ -70,11 +70,23 @@
     <Compile Include="frmDoktorGiris.Designer.cs">
       <DependentUpon>frmDoktorGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuyurular.Designer.cs">
+      <DependentUpon>frmDuyurular.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGirisler.Designer.cs">
       <DependentUpon>frmGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSekreterGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSekreterGiris.Designer.cs">
+      <DependentUpon>frmSekreterGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="HastaDetay.cs">
       <SubType>Form</SubType>
@@ -108,8 +120,14 @@
     <EmbeddedResource Include="frmDoktorGiris.resx">
       <DependentUpon>frmDoktorGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDuyurular.resx">
+      <DependentUpon>frmDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGirisler.resx">
       <DependentUpon>frmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSekreterGiris.resx">
+      <DependentUpon>frmSekreterGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HastaDetay.resx">
       <DependentUpon>HastaDetay.cs</DependentUpon>
