@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilgiDuzenle.Designer.cs">
+      <DependentUpon>frmBilgiDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBilgiDuzenle.resx">
+      <DependentUpon>frmBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGirisler.resx">
       <DependentUpon>frmGirisler.cs</DependentUpon>
     </EmbeddedResource>
