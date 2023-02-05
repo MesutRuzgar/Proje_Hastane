@@ -82,6 +82,12 @@
     <Compile Include="frmGirisler.Designer.cs">
       <DependentUpon>frmGirisler.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSekreterDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSekreterDetay.Designer.cs">
+      <DependentUpon>frmSekreterDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSekreterGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGirisler.resx">
       <DependentUpon>frmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSekreterDetay.resx">
+      <DependentUpon>frmSekreterDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSekreterGiris.resx">
       <DependentUpon>frmSekreterGiris.cs</DependentUpon>
