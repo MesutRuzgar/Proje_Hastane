@@ -45,6 +45,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.lnkBilgileriDuzenle = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,6 +57,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.CadetBlue;
+            this.groupBox1.Controls.Add(this.lnkBilgileriDuzenle);
             this.groupBox1.Controls.Add(this.lblAdSoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lblTcNo);
@@ -217,6 +219,16 @@
             this.dataGridView2.Size = new System.Drawing.Size(572, 256);
             this.dataGridView2.TabIndex = 0;
             // 
+            // lnkBilgileriDuzenle
+            // 
+            this.lnkBilgileriDuzenle.AutoSize = true;
+            this.lnkBilgileriDuzenle.Location = new System.Drawing.Point(87, 102);
+            this.lnkBilgileriDuzenle.Name = "lnkBilgileriDuzenle";
+            this.lnkBilgileriDuzenle.Size = new System.Drawing.Size(123, 18);
+            this.lnkBilgileriDuzenle.TabIndex = 5;
+            this.lnkBilgileriDuzenle.TabStop = true;
+            this.lnkBilgileriDuzenle.Text = "Bilgilerini Düzenle";
+            // 
             // HastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -262,5 +274,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.LinkLabel lnkBilgileriDuzenle;
     }
 }

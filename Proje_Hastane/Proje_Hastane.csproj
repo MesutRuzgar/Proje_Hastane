@@ -52,6 +52,24 @@
     <Compile Include="frmBilgiDuzenle.Designer.cs">
       <DependentUpon>frmBilgiDuzenle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDoktorBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorBilgiDuzenle.Designer.cs">
+      <DependentUpon>frmDoktorBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorDetay.Designer.cs">
+      <DependentUpon>frmDoktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorGiris.Designer.cs">
+      <DependentUpon>frmDoktorGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBilgiDuzenle.resx">
       <DependentUpon>frmBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorBilgiDuzenle.resx">
+      <DependentUpon>frmDoktorBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorDetay.resx">
+      <DependentUpon>frmDoktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorGiris.resx">
+      <DependentUpon>frmDoktorGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGirisler.resx">
       <DependentUpon>frmGirisler.cs</DependentUpon>
