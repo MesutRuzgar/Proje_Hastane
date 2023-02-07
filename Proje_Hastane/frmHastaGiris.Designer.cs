@@ -89,6 +89,7 @@
             this.lnkUyeOl.TabIndex = 4;
             this.lnkUyeOl.TabStop = true;
             this.lnkUyeOl.Text = "Üye Ol";
+            this.lnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUyeOl_LinkClicked);
             // 
             // label3
             // 
@@ -102,6 +103,7 @@
             // 
             // frmHastaGiris
             // 
+            this.AcceptButton = this.btnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -116,7 +118,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmHastaGiris";
-            this.Text = "frmHastaGiris";
+            this.Text = "Hasta Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();
 

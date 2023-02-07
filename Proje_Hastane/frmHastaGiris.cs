@@ -16,5 +16,11 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
+
+        private void lnkUyeOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmHastaKayit fr = new frmHastaKayit();
+            fr.Show();
+        }
     }
 }
