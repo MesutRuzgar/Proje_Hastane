@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGirisler));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnHastaGirisi = new System.Windows.Forms.Button();
+            this.btnDoktorGirisi = new System.Windows.Forms.Button();
+            this.btnSekreterGirisi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,35 +40,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnHastaGirisi
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(24, 157);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 132);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHastaGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHastaGirisi.BackgroundImage")));
+            this.btnHastaGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHastaGirisi.Location = new System.Drawing.Point(24, 157);
+            this.btnHastaGirisi.Name = "btnHastaGirisi";
+            this.btnHastaGirisi.Size = new System.Drawing.Size(151, 132);
+            this.btnHastaGirisi.TabIndex = 0;
+            this.btnHastaGirisi.UseVisualStyleBackColor = true;
+            this.btnHastaGirisi.Click += new System.EventHandler(this.btnHastaGirisi_Click);
             // 
-            // button2
+            // btnDoktorGirisi
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(181, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 132);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDoktorGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDoktorGirisi.BackgroundImage")));
+            this.btnDoktorGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoktorGirisi.Location = new System.Drawing.Point(181, 157);
+            this.btnDoktorGirisi.Name = "btnDoktorGirisi";
+            this.btnDoktorGirisi.Size = new System.Drawing.Size(151, 132);
+            this.btnDoktorGirisi.TabIndex = 1;
+            this.btnDoktorGirisi.UseVisualStyleBackColor = true;
+            this.btnDoktorGirisi.Click += new System.EventHandler(this.btnDoktorGirisi_Click);
             // 
-            // button3
+            // btnSekreterGirisi
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(338, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 132);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSekreterGirisi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSekreterGirisi.BackgroundImage")));
+            this.btnSekreterGirisi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSekreterGirisi.Location = new System.Drawing.Point(338, 157);
+            this.btnSekreterGirisi.Name = "btnSekreterGirisi";
+            this.btnSekreterGirisi.Size = new System.Drawing.Size(151, 132);
+            this.btnSekreterGirisi.TabIndex = 2;
+            this.btnSekreterGirisi.UseVisualStyleBackColor = true;
+            this.btnSekreterGirisi.Click += new System.EventHandler(this.btnSekreterGirisi_Click);
             // 
             // label1
             // 
@@ -106,35 +109,37 @@
             this.label4.Font = new System.Drawing.Font("Pristina", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 63);
+            this.label4.Size = new System.Drawing.Size(356, 63);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Sea Green Hospital";
+            this.label4.Text = "Cadet Blue Hospital";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(357, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(365, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(141, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // frmGirisler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(518, 340);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(507, 334);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnSekreterGirisi);
+            this.Controls.Add(this.btnDoktorGirisi);
+            this.Controls.Add(this.btnHastaGirisi);
+            this.MaximizeBox = false;
+            this.Name = "frmGirisler";
             this.Text = "Hastane Giriş Portalı";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -144,9 +149,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnHastaGirisi;
+        private System.Windows.Forms.Button btnDoktorGirisi;
+        private System.Windows.Forms.Button btnSekreterGirisi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
