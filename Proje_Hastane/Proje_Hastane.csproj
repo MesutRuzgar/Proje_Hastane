@@ -112,11 +112,11 @@
     <Compile Include="frmSekreterGiris.Designer.cs">
       <DependentUpon>frmSekreterGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="HastaDetay.cs">
+    <Compile Include="frmHastaDetay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HastaDetay.Designer.cs">
-      <DependentUpon>HastaDetay.cs</DependentUpon>
+    <Compile Include="frmHastaDetay.Designer.cs">
+      <DependentUpon>frmHastaDetay.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHastaGiris.cs">
       <SubType>Form</SubType>
@@ -166,8 +166,8 @@
     <EmbeddedResource Include="frmSekreterGiris.resx">
       <DependentUpon>frmSekreterGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HastaDetay.resx">
-      <DependentUpon>HastaDetay.cs</DependentUpon>
+    <EmbeddedResource Include="frmHastaDetay.resx">
+      <DependentUpon>frmHastaDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHastaGiris.resx">
       <DependentUpon>frmHastaGiris.cs</DependentUpon>

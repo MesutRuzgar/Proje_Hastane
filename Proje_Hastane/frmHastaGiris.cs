@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Proje_Hastane
 {
@@ -17,10 +18,31 @@ namespace Proje_Hastane
             InitializeComponent();
         }
 
+        sqlBaglantisi bgl = new sqlBaglantisi();
+
         private void lnkUyeOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmHastaKayit fr = new frmHastaKayit();
             fr.Show();
+        }
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+           SqlCommand komut = new SqlCommand("Select * from Tbl_Hastalar where HastaTc=@p1 and HastaSifre=@p2",bgl.baglanti());
+
+            komut.Parameters.AddWithValue("@p1",mtbxTcNo.Text);
+            komut.Parameters.AddWithValue("@p2",tbxSıfre.Text);
+            SqlDataReader dr =komut.ExecuteReader();
+            if (dr.Read())
+            {
+                frmHastaDetay fr = new frmHastaDetay();
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı TC No ya da Şifre","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

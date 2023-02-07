@@ -59,8 +59,10 @@
             // 
             this.tbxSıfre.Location = new System.Drawing.Point(168, 137);
             this.tbxSıfre.Name = "tbxSıfre";
+            this.tbxSıfre.PasswordChar = '*';
             this.tbxSıfre.Size = new System.Drawing.Size(111, 26);
             this.tbxSıfre.TabIndex = 2;
+            this.tbxSıfre.UseSystemPasswordChar = true;
             // 
             // mtbxTcNo
             // 
@@ -79,6 +81,7 @@
             this.btnGirisYap.TabIndex = 3;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // lnkUyeOl
             // 

@@ -1,6 +1,6 @@
 ﻿namespace Proje_Hastane
 {
-    partial class HastaDetay
+    partial class frmHastaDetay
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lnkBilgileriDuzenle = new System.Windows.Forms.LinkLabel();
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTcNo = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lnkBilgileriDuzenle = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -68,6 +68,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bilgiler";
+            // 
+            // lnkBilgileriDuzenle
+            // 
+            this.lnkBilgileriDuzenle.AutoSize = true;
+            this.lnkBilgileriDuzenle.Location = new System.Drawing.Point(87, 102);
+            this.lnkBilgileriDuzenle.Name = "lnkBilgileriDuzenle";
+            this.lnkBilgileriDuzenle.Size = new System.Drawing.Size(123, 18);
+            this.lnkBilgileriDuzenle.TabIndex = 5;
+            this.lnkBilgileriDuzenle.TabStop = true;
+            this.lnkBilgileriDuzenle.Text = "Bilgilerini Düzenle";
             // 
             // lblAdSoyad
             // 
@@ -219,17 +229,7 @@
             this.dataGridView2.Size = new System.Drawing.Size(572, 256);
             this.dataGridView2.TabIndex = 0;
             // 
-            // lnkBilgileriDuzenle
-            // 
-            this.lnkBilgileriDuzenle.AutoSize = true;
-            this.lnkBilgileriDuzenle.Location = new System.Drawing.Point(87, 102);
-            this.lnkBilgileriDuzenle.Name = "lnkBilgileriDuzenle";
-            this.lnkBilgileriDuzenle.Size = new System.Drawing.Size(123, 18);
-            this.lnkBilgileriDuzenle.TabIndex = 5;
-            this.lnkBilgileriDuzenle.TabStop = true;
-            this.lnkBilgileriDuzenle.Text = "Bilgilerini Düzenle";
-            // 
-            // HastaDetay
+            // frmHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,8 +241,8 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "HastaDetay";
-            this.Text = "frmHastaDetay";
+            this.Name = "frmHastaDetay";
+            this.Text = "Hasta Detay";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
