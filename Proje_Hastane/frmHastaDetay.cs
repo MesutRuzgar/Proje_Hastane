@@ -74,5 +74,14 @@ namespace Proje_Hastane
             }
             bgl.baglanti().Close() ;
         }
+
+        private void cbxDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //sql de kelime bazlı arama yaparken tek tırnak kullanılır ancak tek tırnak tek başına kullanılamadığından çift tırnak içerisinde yazılır.
+            DataTable   dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where  RandevuBrans='"+cbxBrans.Text+"'",bgl.baglanti());
+            da.Fill(dt);
+            dataGridView2.DataSource= dt;
+        }
     }
 }
