@@ -181,6 +181,7 @@
             this.cbxBrans.Name = "cbxBrans";
             this.cbxBrans.Size = new System.Drawing.Size(163, 26);
             this.cbxBrans.TabIndex = 1;
+            this.cbxBrans.SelectedIndexChanged += new System.EventHandler(this.cbxBrans_SelectedIndexChanged);
             // 
             // label5
             // 

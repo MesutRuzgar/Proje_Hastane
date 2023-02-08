@@ -58,5 +58,21 @@ namespace Proje_Hastane
             }
             bgl.baglanti().Close();
         }
+
+        private void cbxBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //bu temizliğin amacı branş seçtiğimizde doktor combobox una üzerine ekleme yapmasın diye
+            cbxDoktor.Items.Clear();
+
+            SqlCommand komut3 = new SqlCommand("Select DoktorAd,DoktorSoyad From Tbl_Doktorlar Where DoktorBrans=@p1", bgl.baglanti());
+
+            komut3.Parameters.AddWithValue("@p1",cbxBrans.Text);
+            SqlDataReader   dr3 = komut3.ExecuteReader();
+            while (dr3.Read())
+            {
+                cbxDoktor.Items.Add(dr3[0]+" " + dr3[1]);
+            }
+            bgl.baglanti().Close() ;
+        }
     }
 }
