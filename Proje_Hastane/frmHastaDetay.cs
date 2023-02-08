@@ -25,7 +25,7 @@ namespace Proje_Hastane
         private void frmHastaDetay_Load(object sender, EventArgs e)
         {
             lblTcNo.Text = tc;
-        
+            //ad soyad cekme
             SqlCommand komut = new SqlCommand("Select HastaAd,HastaSoyad from Tbl_Hastalar Where HastaTc=@p1",bgl.baglanti());
 
             komut.Parameters.AddWithValue("@p1",lblTcNo.Text);
@@ -36,6 +36,17 @@ namespace Proje_Hastane
 
             }
             bgl.baglanti().Close();
+
+            //randevu geçmişi
+            DataTable dt = new DataTable();
+            //data adapter datagride veri aktarmak için kullandığımız komut
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where HastaTc="+tc,bgl.baglanti());
+            //data giriti doldur dt den gelen değerle dedik
+            da.Fill(dt);
+            //datagridin veri kaynağı dt den gelen veri dedil
+            dataGridView1.DataSource= dt;
+            
+            //datagridde
 
         }
     }
