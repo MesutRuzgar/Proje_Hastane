@@ -46,10 +46,10 @@
             // btnGuncelle
             // 
             this.btnGuncelle.Location = new System.Drawing.Point(102, 209);
-            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(155, 30);
-            this.btnGuncelle.TabIndex = 22;
+            this.btnGuncelle.TabIndex = 7;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
@@ -70,19 +70,19 @@
             "Erkek",
             "Kadın"});
             this.cbxCinsiyet.Location = new System.Drawing.Point(102, 177);
-            this.cbxCinsiyet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxCinsiyet.Margin = new System.Windows.Forms.Padding(4);
             this.cbxCinsiyet.Name = "cbxCinsiyet";
             this.cbxCinsiyet.Size = new System.Drawing.Size(153, 24);
-            this.cbxCinsiyet.TabIndex = 20;
+            this.cbxCinsiyet.TabIndex = 6;
             // 
             // mskTelNo
             // 
             this.mskTelNo.Location = new System.Drawing.Point(102, 117);
-            this.mskTelNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskTelNo.Margin = new System.Windows.Forms.Padding(4);
             this.mskTelNo.Mask = "(999) 000-0000";
             this.mskTelNo.Name = "mskTelNo";
             this.mskTelNo.Size = new System.Drawing.Size(153, 22);
-            this.mskTelNo.TabIndex = 17;
+            this.mskTelNo.TabIndex = 4;
             // 
             // label5
             // 
@@ -97,10 +97,10 @@
             // tbxSoyad
             // 
             this.tbxSoyad.Location = new System.Drawing.Point(102, 52);
-            this.tbxSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.tbxSoyad.Name = "tbxSoyad";
             this.tbxSoyad.Size = new System.Drawing.Size(153, 22);
-            this.tbxSoyad.TabIndex = 15;
+            this.tbxSoyad.TabIndex = 2;
             // 
             // label4
             // 
@@ -115,10 +115,10 @@
             // tbxAd
             // 
             this.tbxAd.Location = new System.Drawing.Point(102, 22);
-            this.tbxAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxAd.Margin = new System.Windows.Forms.Padding(4);
             this.tbxAd.Name = "tbxAd";
             this.tbxAd.Size = new System.Drawing.Size(153, 22);
-            this.tbxAd.TabIndex = 13;
+            this.tbxAd.TabIndex = 1;
             // 
             // label3
             // 
@@ -133,20 +133,20 @@
             // mskTcNo
             // 
             this.mskTcNo.Location = new System.Drawing.Point(102, 82);
-            this.mskTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskTcNo.Margin = new System.Windows.Forms.Padding(4);
             this.mskTcNo.Mask = "00000000000";
             this.mskTcNo.Name = "mskTcNo";
             this.mskTcNo.Size = new System.Drawing.Size(153, 22);
-            this.mskTcNo.TabIndex = 16;
+            this.mskTcNo.TabIndex = 3;
             this.mskTcNo.ValidatingType = typeof(int);
             // 
             // tbxSifre
             // 
             this.tbxSifre.Location = new System.Drawing.Point(102, 147);
-            this.tbxSifre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxSifre.Margin = new System.Windows.Forms.Padding(4);
             this.tbxSifre.Name = "tbxSifre";
             this.tbxSifre.Size = new System.Drawing.Size(153, 22);
-            this.tbxSifre.TabIndex = 19;
+            this.tbxSifre.TabIndex = 5;
             // 
             // label2
             // 
@@ -170,6 +170,7 @@
             // 
             // frmBilgiDuzenle
             // 
+            this.AcceptButton = this.btnGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -188,9 +189,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBilgiDuzenle";
             this.Text = "frmBilgiDuzenle";
+            this.Load += new System.EventHandler(this.frmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
