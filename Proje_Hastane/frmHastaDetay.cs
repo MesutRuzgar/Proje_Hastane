@@ -46,7 +46,7 @@ namespace Proje_Hastane
             //datagridin veri kaynağı dt den gelen veri dedil
             dataGridView1.DataSource= dt;
             
-            //datagridde
+            //datagridde bağlantı kapatmaya gerek yok
 
         }
     }
