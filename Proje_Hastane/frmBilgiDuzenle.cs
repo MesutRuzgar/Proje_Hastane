@@ -40,5 +40,21 @@ namespace Proje_Hastane
             bgl.baglanti().Close();
 
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("Update Tbl_Hastalar set HastaAd=@p1,HastaSoyad=@p2,HastaTelefon=@p3,HastaSifre=@p4,HastaCinsiyet=@p5 Where HastaTc=@p6",bgl.baglanti());
+
+            komut2.Parameters.AddWithValue("@p1",tbxAd.Text);
+            komut2.Parameters.AddWithValue("@p2", tbxSoyad.Text);
+            komut2.Parameters.AddWithValue("@p3", mskTelNo.Text);
+            komut2.Parameters.AddWithValue("@p4", tbxSifre.Text);
+            komut2.Parameters.AddWithValue("@p5", cbxCinsiyet.Text);
+            komut2.Parameters.AddWithValue("@p6",mskTcNo.Text);
+            komut2.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Bilgileriniz Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
+        }
     }
 }
