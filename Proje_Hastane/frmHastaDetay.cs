@@ -45,9 +45,18 @@ namespace Proje_Hastane
             da.Fill(dt);
             //datagridin veri kaynağı dt den gelen veri dedil
             dataGridView1.DataSource= dt;
-            
+
             //datagridde bağlantı kapatmaya gerek yok
 
+
+            //bransları çekme
+            SqlCommand komut2 = new SqlCommand("Select BransAd from Tbl_Branslar", bgl.baglanti());
+            SqlDataReader   dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                cbxBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
     }
 }
