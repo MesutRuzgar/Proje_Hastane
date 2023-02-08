@@ -36,6 +36,7 @@ namespace Proje_Hastane
             if (dr.Read())
             {
                 frmHastaDetay fr = new frmHastaDetay();
+                fr.tc = mtbxTcNo.Text;
                 fr.Show();
                 this.Hide();
             }
@@ -43,6 +44,7 @@ namespace Proje_Hastane
             {
                 MessageBox.Show("Hatalı TC No ya da Şifre","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+            bgl.baglanti().Close();
         }
     }
 }

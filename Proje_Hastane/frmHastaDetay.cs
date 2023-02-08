@@ -16,5 +16,12 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
+
+        //global e tc atayıp girişten maskedboxtan tc yi buraya atadık ekrana yansıttık.
+        public string tc;
+        private void frmHastaDetay_Load(object sender, EventArgs e)
+        {
+            lblTcNo.Text = tc;
+        }
     }
 }
