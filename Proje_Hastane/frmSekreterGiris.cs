@@ -28,8 +28,11 @@ namespace Proje_Hastane
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
+              
                 frmSekreterDetay frs = new frmSekreterDetay();
-                frs.Show();
+              frs.TcNo = mtbxTcNo.Text;
+            
+              frs.Show();
                 this.Hide();
             }
             else

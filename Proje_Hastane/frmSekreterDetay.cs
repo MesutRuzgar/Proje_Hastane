@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Proje_Hastane
 {
@@ -15,6 +16,24 @@ namespace Proje_Hastane
         public frmSekreterDetay()
         {
             InitializeComponent();
+        }
+
+        public string TcNo;
+        sqlBaglantisi bgl = new sqlBaglantisi();
+        private void frmSekreterDetay_Load(object sender, EventArgs e)
+        {
+            lblTcNo.Text = TcNo;
+            SqlCommand komut = new SqlCommand("Select SekreterAdsoyad From Tbl_Sekreter Where SekreterTc=@p1",bgl.baglanti());
+            
+            komut.Parameters.AddWithValue("@p1",lblTcNo.Text);
+
+            SqlDataReader   dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                lblAdSoyad.Text = dr[0].ToString();
+            }
+            bgl.baglanti().Close();
+
         }
     }
 }
