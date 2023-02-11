@@ -40,6 +40,12 @@ namespace Proje_Hastane
             da.Fill(dt1);
             dataGridView1.DataSource= dt1;
 
+            //Doktorlar
+            DataTable dt2= new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter("Select (DoktorAd+' ' + DoktorSoyad) as 'Doktorlar',DoktorBrans From Tbl_Doktorlar",bgl.baglanti());
+            da2.Fill(dt2);
+            dataGridView2.DataSource= dt2;
+
         }
 
      
