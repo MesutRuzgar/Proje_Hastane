@@ -34,6 +34,14 @@ namespace Proje_Hastane
             }
             bgl.baglanti().Close();
 
+            //Branslar
+            DataTable dt1= new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select Bransad from Tbl_Branslar",bgl.baglanti());
+            da.Fill(dt1);
+            dataGridView1.DataSource= dt1;
+
         }
+
+     
     }
 }
