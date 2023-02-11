@@ -54,6 +54,7 @@
             this.btnGirisYap.TabIndex = 11;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // mtbxTcNo
             // 
@@ -70,6 +71,7 @@
             this.tbxSıfre.Name = "tbxSıfre";
             this.tbxSıfre.Size = new System.Drawing.Size(111, 24);
             this.tbxSıfre.TabIndex = 10;
+            this.tbxSıfre.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -93,8 +95,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(372, 216);
+            this.ClientSize = new System.Drawing.Size(367, 211);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnGirisYap);
             this.Controls.Add(this.mtbxTcNo);
@@ -102,9 +105,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmSekreterGiris";
-            this.Text = "frmSekreter";
+            this.Text = "Sekreter Girişi";
             this.ResumeLayout(false);
             this.PerformLayout();
 
