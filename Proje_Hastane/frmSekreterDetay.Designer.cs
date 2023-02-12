@@ -59,6 +59,7 @@
             this.btnDoktorPanel = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -317,6 +318,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.btnRandevuListe);
             this.groupBox6.Controls.Add(this.btnBransPanel);
             this.groupBox6.Controls.Add(this.btnDoktorPanel);
@@ -329,9 +331,9 @@
             // 
             // btnRandevuListe
             // 
-            this.btnRandevuListe.Location = new System.Drawing.Point(275, 31);
+            this.btnRandevuListe.Location = new System.Drawing.Point(231, 31);
             this.btnRandevuListe.Name = "btnRandevuListe";
-            this.btnRandevuListe.Size = new System.Drawing.Size(115, 33);
+            this.btnRandevuListe.Size = new System.Drawing.Size(113, 33);
             this.btnRandevuListe.TabIndex = 2;
             this.btnRandevuListe.Text = "Randevu Listesi";
             this.btnRandevuListe.UseVisualStyleBackColor = true;
@@ -339,9 +341,9 @@
             // 
             // btnBransPanel
             // 
-            this.btnBransPanel.Location = new System.Drawing.Point(162, 31);
+            this.btnBransPanel.Location = new System.Drawing.Point(118, 31);
             this.btnBransPanel.Name = "btnBransPanel";
-            this.btnBransPanel.Size = new System.Drawing.Size(109, 33);
+            this.btnBransPanel.Size = new System.Drawing.Size(107, 33);
             this.btnBransPanel.TabIndex = 1;
             this.btnBransPanel.Text = "Branş Paneli";
             this.btnBransPanel.UseVisualStyleBackColor = true;
@@ -349,9 +351,9 @@
             // 
             // btnDoktorPanel
             // 
-            this.btnDoktorPanel.Location = new System.Drawing.Point(49, 31);
+            this.btnDoktorPanel.Location = new System.Drawing.Point(5, 31);
             this.btnDoktorPanel.Name = "btnDoktorPanel";
-            this.btnDoktorPanel.Size = new System.Drawing.Size(109, 33);
+            this.btnDoktorPanel.Size = new System.Drawing.Size(107, 33);
             this.btnDoktorPanel.TabIndex = 0;
             this.btnDoktorPanel.Text = "Doktor Paneli";
             this.btnDoktorPanel.UseVisualStyleBackColor = true;
@@ -376,6 +378,16 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(273, 191);
             this.dataGridView2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(350, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Duyurular";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmSekreterDetay
             // 
@@ -441,5 +453,6 @@
         private System.Windows.Forms.Button btnDoktorPanel;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button1;
     }
 }
