@@ -60,5 +60,12 @@ namespace Proje_Hastane
         {
             Application.Exit();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            rtbxSikayet.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
+
+        }
     }
 }
