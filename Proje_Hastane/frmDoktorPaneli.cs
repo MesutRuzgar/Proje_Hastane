@@ -26,6 +26,15 @@ namespace Proje_Hastane
             SqlDataAdapter da1 = new SqlDataAdapter("Select * From Tbl_Doktorlar", bgl.baglanti());
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
+
+            //bransarı comboboxa aktarma
+            SqlCommand komut2 = new SqlCommand("Select BransAd from Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                cbxBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
