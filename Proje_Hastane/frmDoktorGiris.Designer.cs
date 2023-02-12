@@ -56,6 +56,7 @@
             this.btnGirisYap.TabIndex = 11;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // mtbxTcNo
             // 
