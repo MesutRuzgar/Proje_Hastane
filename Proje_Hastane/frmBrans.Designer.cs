@@ -47,6 +47,7 @@
             this.btnGuncelle.TabIndex = 5;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -96,6 +97,7 @@
             // 
             // tbxBransId
             // 
+            this.tbxBransId.Enabled = false;
             this.tbxBransId.Location = new System.Drawing.Point(84, 14);
             this.tbxBransId.Name = "tbxBransId";
             this.tbxBransId.Size = new System.Drawing.Size(100, 24);

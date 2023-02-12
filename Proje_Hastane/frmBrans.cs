@@ -53,5 +53,15 @@ namespace Proje_Hastane
             bgl.baglanti().Close();
             MessageBox.Show("Branş Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update tbl_branslar set bransad=@p1 where bransid=@p2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", tbxBransAd.Text);
+            komut.Parameters.AddWithValue("@p2", tbxBransId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Branş Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
