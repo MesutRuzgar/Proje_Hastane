@@ -173,6 +173,7 @@
             this.btnDuyurular.TabIndex = 0;
             this.btnDuyurular.Text = "Duyurular";
             this.btnDuyurular.UseVisualStyleBackColor = true;
+            this.btnDuyurular.Click += new System.EventHandler(this.btnDuyurular_Click);
             // 
             // frmDoktorDetay
             // 

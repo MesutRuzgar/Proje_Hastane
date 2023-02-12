@@ -37,9 +37,9 @@ namespace Proje_Hastane
             //randevular
 
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuDoktor='"+lblAdSoyad.Text+"'",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * from tbl_randevular where RandevuDoktor='" + lblAdSoyad.Text + "'", bgl.baglanti());
             da.Fill(dt);
-            dataGridView1.DataSource= dt;
+            dataGridView1.DataSource = dt;
 
         }
 
@@ -47,6 +47,12 @@ namespace Proje_Hastane
         {
             frmDoktorBilgiDuzenle fr = new frmDoktorBilgiDuzenle();
             fr.TC = lblTcNo.Text;
+            fr.Show();
+        }
+
+        private void btnDuyurular_Click(object sender, EventArgs e)
+        {
+            frmDuyurular fr = new frmDuyurular();
             fr.Show();
         }
     }
