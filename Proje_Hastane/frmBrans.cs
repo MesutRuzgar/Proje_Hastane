@@ -37,5 +37,12 @@ namespace Proje_Hastane
             MessageBox.Show("Branş Başarıyla Eklendi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            tbxBransId.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            tbxBransAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+        }
     }
 }
