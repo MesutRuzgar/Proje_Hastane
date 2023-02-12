@@ -42,5 +42,12 @@ namespace Proje_Hastane
             dataGridView1.DataSource= dt;
 
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            frmDoktorBilgiDuzenle fr = new frmDoktorBilgiDuzenle();
+            fr.TC = lblTcNo.Text;
+            fr.Show();
+        }
     }
 }

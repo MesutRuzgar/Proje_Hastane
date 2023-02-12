@@ -163,6 +163,7 @@
             this.btnGuncelle.TabIndex = 2;
             this.btnGuncelle.Text = "Bilgi Düzenle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnDuyurular
             // 

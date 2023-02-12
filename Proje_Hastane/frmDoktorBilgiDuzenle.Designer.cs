@@ -50,6 +50,7 @@
             this.btnGuncelle.TabIndex = 35;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // label5
             // 
@@ -138,9 +139,6 @@
             // cbxBrans
             // 
             this.cbxBrans.FormattingEnabled = true;
-            this.cbxBrans.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
             this.cbxBrans.Location = new System.Drawing.Point(139, 141);
             this.cbxBrans.Margin = new System.Windows.Forms.Padding(4);
             this.cbxBrans.Name = "cbxBrans";
@@ -165,9 +163,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmDoktorBilgiDuzenle";
-            this.Text = "frmDoktorBilgiDuzenle";
+            this.Text = "Doktor Bilgi Düzenle";
+            this.Load += new System.EventHandler(this.frmDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
