@@ -65,7 +65,7 @@ namespace Proje_Hastane
             komutkaydet.Parameters.AddWithValue("@p2", mskSaat.Text);
             komutkaydet.Parameters.AddWithValue("@p3", cbxBrans.Text);
             komutkaydet.Parameters.AddWithValue("@p4", cbxDoktor.Text);
-           
+
             komutkaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Randevu Başarıyla Oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -80,9 +80,18 @@ namespace Proje_Hastane
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
-                cbxDoktor.Items.Add(dr[0]+" " + dr[1]);
+                cbxDoktor.Items.Add(dr[0] + " " + dr[1]);
             }
             bgl.baglanti().Close();
+        }
+
+        private void btnOlustur_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular (duyuru) values (@p1)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", rtbxDuyurular.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru Başarıyla Eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

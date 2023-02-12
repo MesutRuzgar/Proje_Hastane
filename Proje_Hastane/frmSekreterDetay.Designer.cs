@@ -146,6 +146,7 @@
             this.btnOlustur.TabIndex = 0;
             this.btnOlustur.Text = "Oluştur";
             this.btnOlustur.UseVisualStyleBackColor = true;
+            this.btnOlustur.Click += new System.EventHandler(this.btnOlustur_Click);
             // 
             // groupBox3
             // 
