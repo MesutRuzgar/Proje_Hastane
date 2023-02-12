@@ -29,6 +29,7 @@ namespace Proje_Hastane
             if (dr.Read())
             {
                 frmDoktorDetay fr = new frmDoktorDetay();
+                fr.TC=mtbxTcNo.Text;
                 fr.Show();
                 this.Hide();
             }
