@@ -35,6 +35,8 @@
             this.lblTcNo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbxId = new System.Windows.Forms.TextBox();
+            this.lblid = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnRandevuAl = new System.Windows.Forms.Button();
             this.rtbxSikayet = new System.Windows.Forms.RichTextBox();
@@ -46,8 +48,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblid = new System.Windows.Forms.Label();
-            this.tbxId = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -136,6 +136,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Paneli";
             // 
+            // tbxId
+            // 
+            this.tbxId.Enabled = false;
+            this.tbxId.Location = new System.Drawing.Point(89, 24);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(162, 24);
+            this.tbxId.TabIndex = 10;
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(43, 27);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(23, 18);
+            this.lblid.TabIndex = 9;
+            this.lblid.Text = "id:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -153,6 +170,7 @@
             this.btnRandevuAl.TabIndex = 4;
             this.btnRandevuAl.Text = "Randevu Al";
             this.btnRandevuAl.UseVisualStyleBackColor = true;
+            this.btnRandevuAl.Click += new System.EventHandler(this.btnRandevuAl_Click);
             // 
             // rtbxSikayet
             // 
@@ -235,22 +253,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(572, 256);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(43, 27);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(23, 18);
-            this.lblid.TabIndex = 9;
-            this.lblid.Text = "id:";
-            // 
-            // tbxId
-            // 
-            this.tbxId.Location = new System.Drawing.Point(89, 24);
-            this.tbxId.Name = "tbxId";
-            this.tbxId.Size = new System.Drawing.Size(162, 24);
-            this.tbxId.TabIndex = 10;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // frmHastaDetay
             // 

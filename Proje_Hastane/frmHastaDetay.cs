@@ -26,13 +26,13 @@ namespace Proje_Hastane
         {
             lblTcNo.Text = tc;
             //ad soyad cekme
-            SqlCommand komut = new SqlCommand("Select HastaAd,HastaSoyad from Tbl_Hastalar Where HastaTc=@p1",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Select HastaAd,HastaSoyad from Tbl_Hastalar Where HastaTc=@p1", bgl.baglanti());
 
-            komut.Parameters.AddWithValue("@p1",lblTcNo.Text);
+            komut.Parameters.AddWithValue("@p1", lblTcNo.Text);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
-                lblAdSoyad.Text = dr[0] +" "+ dr[1];
+                lblAdSoyad.Text = dr[0] + " " + dr[1];
 
             }
             bgl.baglanti().Close();
@@ -40,18 +40,18 @@ namespace Proje_Hastane
             //randevu geçmişi
             DataTable dt = new DataTable();
             //data adapter datagride veri aktarmak için kullandığımız komut
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where HastaTc="+tc,bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where HastaTc=" + tc, bgl.baglanti());
             //data giriti doldur dt den gelen değerle dedik
             da.Fill(dt);
             //datagridin veri kaynağı dt den gelen veri dedil
-            dataGridView1.DataSource= dt;
+            dataGridView1.DataSource = dt;
 
             //datagridde bağlantı kapatmaya gerek yok
 
 
             //bransları çekme
             SqlCommand komut2 = new SqlCommand("Select BransAd from Tbl_Branslar", bgl.baglanti());
-            SqlDataReader   dr2 = komut2.ExecuteReader();
+            SqlDataReader dr2 = komut2.ExecuteReader();
             while (dr2.Read())
             {
                 cbxBrans.Items.Add(dr2[0]);
@@ -66,31 +66,48 @@ namespace Proje_Hastane
 
             SqlCommand komut3 = new SqlCommand("Select DoktorAd,DoktorSoyad From Tbl_Doktorlar Where DoktorBrans=@p1", bgl.baglanti());
 
-            komut3.Parameters.AddWithValue("@p1",cbxBrans.Text);
-            SqlDataReader   dr3 = komut3.ExecuteReader();
+            komut3.Parameters.AddWithValue("@p1", cbxBrans.Text);
+            SqlDataReader dr3 = komut3.ExecuteReader();
             while (dr3.Read())
             {
-                cbxDoktor.Items.Add(dr3[0]+" " + dr3[1]);
+                cbxDoktor.Items.Add(dr3[0] + " " + dr3[1]);
             }
-            bgl.baglanti().Close() ;
+            bgl.baglanti().Close();
         }
 
         private void cbxDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             //sql de kelime bazlı arama yaparken tek tırnak kullanılır ancak tek tırnak tek başına kullanılamadığından çift tırnak içerisinde yazılır.
-            DataTable   dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where  RandevuBrans='"+cbxBrans.Text+"'" + " and RandevuDoktor='"+cbxDoktor.Text+"' and RandevuDurum=0",bgl.baglanti());
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where  RandevuBrans='" + cbxBrans.Text + "'" + " and RandevuDoktor='" + cbxDoktor.Text + "' and RandevuDurum=0", bgl.baglanti());
             da.Fill(dt);
-            dataGridView2.DataSource= dt;
+            dataGridView2.DataSource = dt;
         }
 
         private void lnkBilgileriDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmBilgiDuzenle fr = new frmBilgiDuzenle();
-            fr.tcNo=lblTcNo.Text;
+            fr.tcNo = lblTcNo.Text;
             fr.Show();
 
 
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            tbxId.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
+        }
+
+        private void btnRandevuAl_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update tbl_randevular set randevuDurum=1,HastaTc=@p1,HastaSikayet=@p2 where randevuid=@p3", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1",lblTcNo.Text);
+            komut.Parameters.AddWithValue("@p2",rtbxSikayet.Text);
+            komut.Parameters.AddWithValue("@p3",tbxId.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevunuz Başarıyla Oluşturuldu","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }
