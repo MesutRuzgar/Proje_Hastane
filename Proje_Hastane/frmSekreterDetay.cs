@@ -60,13 +60,12 @@ namespace Proje_Hastane
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor,HastaTc) values (@p1,@p2,@p3,@p4,@p6)", bgl.baglanti());
+            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor) values (@p1,@p2,@p3,@p4)", bgl.baglanti());
             komutkaydet.Parameters.AddWithValue("@p1", mskTarih.Text);
             komutkaydet.Parameters.AddWithValue("@p2", mskSaat.Text);
             komutkaydet.Parameters.AddWithValue("@p3", cbxBrans.Text);
             komutkaydet.Parameters.AddWithValue("@p4", cbxDoktor.Text);
-            //komutkaydet.Parameters.AddWithValue("@p5", checkBox1);
-            komutkaydet.Parameters.AddWithValue("@p6", TcNo);
+           
             komutkaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Randevu Başarıyla Oluşturuldu.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
