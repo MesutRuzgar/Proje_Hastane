@@ -346,6 +346,7 @@
             this.btnRandevuListe.TabIndex = 2;
             this.btnRandevuListe.Text = "Randevu Listesi";
             this.btnRandevuListe.UseVisualStyleBackColor = true;
+            this.btnRandevuListe.Click += new System.EventHandler(this.btnRandevuListe_Click);
             // 
             // btnBransPanel
             // 
