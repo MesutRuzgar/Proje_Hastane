@@ -50,7 +50,7 @@
             // btnGirisYap
             // 
             this.btnGirisYap.Location = new System.Drawing.Point(132, 185);
-            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(170, 44);
             this.btnGirisYap.TabIndex = 11;
@@ -60,7 +60,7 @@
             // mtbxTcNo
             // 
             this.mtbxTcNo.Location = new System.Drawing.Point(136, 87);
-            this.mtbxTcNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mtbxTcNo.Margin = new System.Windows.Forms.Padding(4);
             this.mtbxTcNo.Mask = "00000000000";
             this.mtbxTcNo.Name = "mtbxTcNo";
             this.mtbxTcNo.Size = new System.Drawing.Size(164, 24);
@@ -70,10 +70,11 @@
             // tbxSıfre
             // 
             this.tbxSıfre.Location = new System.Drawing.Point(136, 141);
-            this.tbxSıfre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxSıfre.Margin = new System.Windows.Forms.Padding(4);
             this.tbxSıfre.Name = "tbxSıfre";
             this.tbxSıfre.Size = new System.Drawing.Size(164, 24);
             this.tbxSıfre.TabIndex = 10;
+            this.tbxSıfre.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -108,9 +109,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDoktorGiris";
-            this.Text = "frmDoktorGiris";
+            this.Text = "Doktor Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();
 

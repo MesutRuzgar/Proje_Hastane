@@ -79,7 +79,7 @@ namespace Proje_Hastane
         {
             //sql de kelime bazlı arama yaparken tek tırnak kullanılır ancak tek tırnak tek başına kullanılamadığından çift tırnak içerisinde yazılır.
             DataTable   dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where  RandevuBrans='"+cbxBrans.Text+"'",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where  RandevuBrans='"+cbxBrans.Text+"'" + " and RandevuDoktor='"+cbxDoktor.Text+"'",bgl.baglanti());
             da.Fill(dt);
             dataGridView2.DataSource= dt;
         }
