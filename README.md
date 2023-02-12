@@ -4,6 +4,7 @@
  
  
 ## Proje Resimleri
+> Hasta Hatalı Giriş 'te olduğu gibi ekleme, silme, güncelleme butonlarında da uyarı ekranları vardır.
  
  1. **Girişler** --> https://www.hizliresim.com/nyp303n
  
