@@ -93,5 +93,11 @@ namespace Proje_Hastane
             bgl.baglanti().Close();
             MessageBox.Show("Duyuru Başarıyla Eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnDoktorPanel_Click(object sender, EventArgs e)
+        {
+            frmDoktorPaneli drp = new frmDoktorPaneli();
+            drp.Show();
+        }
     }
 }

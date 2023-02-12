@@ -364,6 +364,7 @@
             this.btnDoktorPanel.TabIndex = 0;
             this.btnDoktorPanel.Text = "Doktor Paneli";
             this.btnDoktorPanel.UseVisualStyleBackColor = true;
+            this.btnDoktorPanel.Click += new System.EventHandler(this.btnDoktorPanel_Click);
             // 
             // groupBox5
             // 

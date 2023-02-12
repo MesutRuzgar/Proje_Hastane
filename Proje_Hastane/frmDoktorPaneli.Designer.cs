@@ -80,7 +80,7 @@
             // mskTcNo
             // 
             this.mskTcNo.Location = new System.Drawing.Point(72, 115);
-            this.mskTcNo.Mask = "000000000000";
+            this.mskTcNo.Mask = "00000000000";
             this.mskTcNo.Name = "mskTcNo";
             this.mskTcNo.Size = new System.Drawing.Size(100, 24);
             this.mskTcNo.TabIndex = 11;
@@ -133,8 +133,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(198, 23);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(368, 146);
+            this.dataGridView1.Size = new System.Drawing.Size(368, 215);
             this.dataGridView1.TabIndex = 17;
+           
             // 
             // btnEkle
             // 
@@ -144,6 +145,7 @@
             this.btnEkle.TabIndex = 18;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnSil
             // 
@@ -184,9 +186,10 @@
             this.Controls.Add(this.tbxAd);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDoktorPaneli";
             this.Text = "frmDoktorPaneli";
+            this.Load += new System.EventHandler(this.frmDoktorPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
