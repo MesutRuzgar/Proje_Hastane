@@ -55,5 +55,10 @@ namespace Proje_Hastane
             frmDuyurular fr = new frmDuyurular();
             fr.Show();
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

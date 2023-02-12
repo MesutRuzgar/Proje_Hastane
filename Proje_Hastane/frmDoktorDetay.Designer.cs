@@ -154,6 +154,7 @@
             this.btnCikis.TabIndex = 3;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // btnGuncelle
             // 
