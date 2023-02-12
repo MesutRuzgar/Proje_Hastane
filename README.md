@@ -1,6 +1,6 @@
-# Hastane Otomasyon Uygulaması
+# Hastane Uygulaması
 
- Udemy üzerinden aldığım eğitim doğrultusunda Murat Yücedağ hocam ile beraber geliştirmiş olduğum hastane otomasyon uygulamasıdır.
+ Udemy üzerinden aldığım eğitim doğrultusunda Murat Yücedağ hocam ile beraber geliştirmiş olduğum hastane uygulamasıdır.
  
  
 ## Proje Resimleri
