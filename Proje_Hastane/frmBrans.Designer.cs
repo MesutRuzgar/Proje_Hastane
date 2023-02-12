@@ -44,7 +44,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(84, 110);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(98, 29);
-            this.btnGuncelle.TabIndex = 34;
+            this.btnGuncelle.TabIndex = 5;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
@@ -53,7 +53,7 @@
             this.btnSil.Location = new System.Drawing.Point(136, 75);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(46, 29);
-            this.btnSil.TabIndex = 33;
+            this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
             // 
@@ -62,12 +62,14 @@
             this.btnEkle.Location = new System.Drawing.Point(84, 75);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(46, 29);
-            this.btnEkle.TabIndex = 32;
+            this.btnEkle.TabIndex = 3;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(198, 17);
             this.dataGridView1.Name = "dataGridView1";
@@ -79,7 +81,7 @@
             this.tbxBransAd.Location = new System.Drawing.Point(84, 45);
             this.tbxBransAd.Name = "tbxBransAd";
             this.tbxBransAd.Size = new System.Drawing.Size(100, 24);
-            this.tbxBransAd.TabIndex = 24;
+            this.tbxBransAd.TabIndex = 2;
             // 
             // label2
             // 
@@ -95,7 +97,7 @@
             this.tbxBransId.Location = new System.Drawing.Point(84, 14);
             this.tbxBransId.Name = "tbxBransId";
             this.tbxBransId.Size = new System.Drawing.Size(100, 24);
-            this.tbxBransId.TabIndex = 22;
+            this.tbxBransId.TabIndex = 1;
             // 
             // label1
             // 
@@ -121,9 +123,10 @@
             this.Controls.Add(this.tbxBransId);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBrans";
-            this.Text = "frmBrans";
+            this.Text = "Branş";
+            this.Load += new System.EventHandler(this.frmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

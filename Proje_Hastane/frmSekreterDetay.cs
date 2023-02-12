@@ -99,5 +99,11 @@ namespace Proje_Hastane
             frmDoktorPaneli drp = new frmDoktorPaneli();
             drp.Show();
         }
+
+        private void btnBransPanel_Click(object sender, EventArgs e)
+        {
+            frmBrans frb = new frmBrans();
+            frb.Show();
+        }
     }
 }

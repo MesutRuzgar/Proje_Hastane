@@ -355,6 +355,7 @@
             this.btnBransPanel.TabIndex = 1;
             this.btnBransPanel.Text = "Branş Paneli";
             this.btnBransPanel.UseVisualStyleBackColor = true;
+            this.btnBransPanel.Click += new System.EventHandler(this.btnBransPanel_Click);
             // 
             // btnDoktorPanel
             // 
