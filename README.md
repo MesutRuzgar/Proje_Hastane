@@ -1,4 +1,4 @@
-# Hastane Uygulaması
+# Hastane Panel Projesi
 
  Udemy üzerinden aldığım eğitim doğrultusunda Murat Yücedağ hocam ile beraber geliştirmiş olduğum hastane uygulamasıdır.
  
