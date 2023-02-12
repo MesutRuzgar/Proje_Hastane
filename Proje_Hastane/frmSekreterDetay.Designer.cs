@@ -37,7 +37,6 @@
             this.rtbxDuyurular = new System.Windows.Forms.RichTextBox();
             this.btnOlustur = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.mtbxTcNo = new System.Windows.Forms.MaskedTextBox();
@@ -150,7 +149,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnGuncelle);
             this.groupBox3.Controls.Add(this.btnKaydet);
             this.groupBox3.Controls.Add(this.checkBox1);
             this.groupBox3.Controls.Add(this.mtbxTcNo);
@@ -171,15 +169,6 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Location = new System.Drawing.Point(71, 299);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(99, 23);
-            this.btnGuncelle.TabIndex = 15;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
             // btnKaydet
             // 
@@ -300,7 +289,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 28);
+            this.label2.Location = new System.Drawing.Point(43, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 16);
             this.label2.TabIndex = 0;
@@ -430,7 +419,6 @@
         private System.Windows.Forms.RichTextBox rtbxDuyurular;
         private System.Windows.Forms.Button btnOlustur;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.MaskedTextBox mtbxTcNo;

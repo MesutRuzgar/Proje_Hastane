@@ -111,5 +111,7 @@ namespace Proje_Hastane
             frmRandevuListesi frl = new frmRandevuListesi();
             frl.Show();
         }
+
+       
     }
 }

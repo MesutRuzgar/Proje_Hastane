@@ -26,5 +26,8 @@ namespace Proje_Hastane
             da.Fill(dt);
             dataGridView1.DataSource= dt;
         }
+
+       
+       
     }
 }
