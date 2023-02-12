@@ -42,6 +42,15 @@ namespace Proje_Hastane
 
         }
 
-      
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            tbxAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            tbxSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            cbxBrans.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            mskTcNo.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+            tbxSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+
+        }
     }
 }
